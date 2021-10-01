@@ -1,10 +1,10 @@
-import { Component } from "./base-component.js";
+import Cmp from "./base-component.js";
 import * as Validation from "../util/validation.js";
 import { autobind as Autobind } from "../decorators/autobind.js";
 import { projectState } from "../state/project-state.js";
 
 //ProjectInput Class
-export class ProjectInput extends Component<HTMLDListElement, HTMLFormElement> {
+export class ProjectInput extends Cmp<HTMLDListElement, HTMLFormElement> {
     titleInputElement: HTMLInputElement;
     descriptionInputElement: HTMLInputElement;
     peopleInputElement: HTMLInputElement;
